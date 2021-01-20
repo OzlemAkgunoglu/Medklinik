@@ -1,0 +1,156 @@
+body {
+  background-color: #808080;
+  
+}
+.row{
+  margin: 0;
+}
+
+.left, .right {
+  width: 15%;
+  margin: 0;
+}
+
+.middle {
+  width: 70%;
+  margin: 0;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*Images*/
+img{
+    width: 100%;
+    height:100%;
+    margin: 0;
+    padding-top: 20px;
+    
+    
+}
+/*Menu*/
+.container-fluid{
+    padding: 0; /*menü hizalamak*/
+    margin: 0;
+}
+.navbar{
+  width: 100%;
+  margin: 0;
+}
+/*Menu elements*/
+ul.navbar-nav li a.active{
+  background-color: #66ffff;
+}
+
+ul.navbar-nav li a:hover:not(.active){
+  background-color: #66ffff;
+}
+/*Menu Text Properties*/
+ul.navbar-nav li a{
+	color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+
+
+}
+
+/*Banner*/
+.jumbotron img {
+  width: 100%;
+  height: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0;
+
+}
+
+.sidebar{
+  color:#000000;
+  background-color: #f2f2f2 ;
+  border-radius: 25px 0px 0px 25px;
+  border-style: hidden;    
+  border-color: #f2f2f2;
+  position: relative;
+  font-size: 14px;
+  height: auto;
+  width: 30%;
+  padding-left: 2%;
+  margin: 0;
+}
+
+ul{
+  color: #339966; 
+  font-style: bold;
+  list-style-image:url('img/menu.png');
+  
+}
+
+.cat{
+  border-radius: 25px 0px 0px 25px;
+  width: 100%;
+}
+.main{
+  display: flex;
+  align-items: flex-start;
+  padding-top: 10px;
+  padding-bottom: 80px;
+}
+/*Content*/
+.content{
+  color:#000000;
+  background-color: #ffffff ;
+  border-radius: 0px 25px 25px 0px;
+  border-style: hidden;    
+  border-color: #ffffff;
+  font-size: 14px;
+  position: relative;
+  height: auto;
+  width: 70%;
+  padding: 5%;
+  margin: 0;
+}
+
+
+/*Searh Button*/
+input[type=text] {
+  width: 80%;
+  height: auto;
+  box-sizing: border-box;
+  border: 2px solid grey;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('img/search.png');
+  margin: 10% 5% 10% 5%;
+  background-position: left; 
+  background-repeat: no-repeat;
+  padding-left: 10% ;
+  
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    
+  }
+  .content{
+    order: 1;
+    width: auto;
+    border-radius: 0px;
+  }
+  .main{
+    
+    flex-direction: column;
+  }
+  .sidebar{
+    order: 2;
+    width: 100%;
+    
+    border-radius: 0px;
+  }
+
+}
